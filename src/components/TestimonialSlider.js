@@ -17,7 +17,7 @@ const TestimonialSlider = ({clientTestimonials}) => {
                           </div>
                           <div className="card-col-2 flex flex-col w-full sm:w-3/5 gap-y-4 px-1">
                             <h4 className="testimonial-highlight leading-4 font-semibold text-sm">{highlight}</h4>
-                            <p className="tstimonial-quote leading-4 text-justify font-regular text-xs">{quote}</p>
+                            <p className="testimonial-quote leading-4 text-justify font-regular text-xs">{quote}</p>
                           </div>
                         </div>
                     </SwiperSlide>
