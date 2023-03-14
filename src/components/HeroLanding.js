@@ -10,7 +10,7 @@ const HeroLanding = () => {
         <h1 className="text-5xl md:text-7xl font-medium text-white mt-36 md:w-2/3">
           Scalable Business Solutions that Perform
         </h1>
-        <p className=" text-base sm:text-xl text-white">Move at the Speed of Inovation, Compromise Nothing</p>
+        <p className=" text-base sm:text-xl text-white">Move at the Speed of Innovation, Compromise Nothing</p>
         <div className="flex gap-x-6">
           <Link href="/capabilities">
             <button className="capabilities-button">

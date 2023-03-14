@@ -8,10 +8,29 @@ import CardElement from '@/components/CardElement'
 import TestimonialSlider from '@/components/TestimonialSlider'
 import ContactUsForm from '@/components/ContactUsForm'
 import Footer from '@/components/Footer'
+import { useEffect } from 'react'
 
 const inter = Inter({ subsets: ['latin'] })
 
 export default function Home() {
+
+  useEffect(() => {
+    var myNav = document.getElementById('navbar');
+    document.addEventListener('scroll', () => {
+      let scrollTop =  window.scrollY;
+      console.log(scrollTop);
+      if (scrollTop >= 1 ) {
+        myNav.classList.add("filled");
+        console.log("Hello! 3");
+      } 
+      else {
+          myNav.classList.remove("filled");
+          console.log("Hello!");
+      }
+    })
+
+  }, [])
+  
   return (
     <>
       <Head>
@@ -20,7 +39,7 @@ export default function Home() {
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      <main className="flex flex-col">
+      <main className="flex flex-col relative">
         <NavBar/>
         <HeroLanding/>
         <Spacer/>
