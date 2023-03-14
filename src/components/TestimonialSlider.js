@@ -11,7 +11,7 @@ const TestimonialSlider = ({clientTestimonials}) => {
             clientTestimonials.map(({name, role, highlight, quote, image, logo}, index) => {
                 return (
                     <SwiperSlide key={"testimonial-" + index}>
-                        <div className="mx-10 md:mx-20 my-10 px-8 py-8 slider-card flex flex-col-reverse items-center sm:items-start sm:flex-row">
+                        <div className="mx-10 md:mx-20 my-10 px-4 md:px-8 py-8 slider-card flex flex-col-reverse items-center sm:items-start sm:flex-row">
                           <div className="card-col-1 flex flex-col w-full sm:w-2/5 mt-4 sm:mt-0">
                             <NameCard name={name} role={role} image={image}/>
                           </div>

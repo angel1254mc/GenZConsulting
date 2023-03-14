@@ -6,6 +6,8 @@ import NavBar from '@/components/NavBar'
 import Spacer from '@/components/Spacer'
 import CardElement from '@/components/CardElement'
 import TestimonialSlider from '@/components/TestimonialSlider'
+import ContactUsForm from '@/components/ContactUsForm'
+import Footer from '@/components/Footer'
 
 const inter = Inter({ subsets: ['latin'] })
 
@@ -52,7 +54,7 @@ export default function Home() {
         </div>
         <Spacer></Spacer>
         <div className="w-full flex flex-col items-center">
-          <div className="flex flex-col gap-y-2 w-full sm:max-w-[1280px]">
+          <div className="flex flex-col gap-y-2 w-full px-6 md:px-0 sm:max-w-[1280px]">
               <section className="flex flex-col w-full items-center gap-y-2">
                 <p className="text-xs md:text-sm text-violet-800 font-light">WE PRIDE OURSELVES IN DELIVERING THE HIGHEST LEVEL OF SERVICE</p>
                 <h1 className="text-2xl md:text-3xl font-semibold">Our Clients</h1>
@@ -83,7 +85,24 @@ export default function Home() {
           </div>
         </div>
         <Spacer></Spacer>
+        <div className="contact-background flex flex-col w-full items-center">
+            <section className="flex flex-col gap-y-4 md:flex-row w-full sm:max-w-[1280px] justify-center">
+              <section className="flex flex-col w-full px-6 md:w-[40%] lg:w-2/5 gap-y-2">
+                <Spacer></Spacer>
+                <Spacer></Spacer>
+                <p className="text-xs md:text-sm text-violet-200 font-light">CONNECT WITH AN EXPERT</p>
+                <h1 className="text-2xl md:text-3xl mb-1 font-semibold text-white">Get In Contact</h1>
+                <hr className="mr-8 mt-2 b-2 border-violet-300"></hr>
+                <p className="text-xs font-regular leading-5 text-white mt-2">Our team is committed to delivering exceptional service and results, and we take pride in building long-term relationships with our clients based on trust, integrity, and mutual respect. With Gen Z Consulting, you can rest assured that you have a partner who is invested in your success. </p>
+                <p className="text-xs font-regular leading-5 text-white mt-2">If you would like to learn more about our services, discuss a potential project, or inquire about a career opportunity, please feel free to contact us. </p>
 
+              </section>
+              <section className="flex flex-col w-full px-6 md:px-2 md:w-[40%] lg:w-2/5 py-8 gap-y-2">
+                <ContactUsForm></ContactUsForm>
+              </section>
+            </section>
+        </div>
+        <Footer></Footer>
       </main>
        
     </>

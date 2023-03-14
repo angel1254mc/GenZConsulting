@@ -37,12 +37,64 @@
   height: 70px;
   border-radius: 10rem;
 }
+.swiper-button-next::after {
+  color :#3A1D5A;
+}
+.swiper-button-prev::after {
+  color:  #3A1D5A;
+}
 .slider-card {
   background-color: #FDE9FF;
   border: 1px solid #9048E2;
   border-radius: 5px;
   box-shadow: 0px 4px 40px 5px #00000040;
 }
+.contact-background {
+  background: linear-gradient(0deg, rgba(46, 17, 60, 0.4), rgba(46, 17, 60, 0.4)), url(https://images.unsplash.com/photo-1497366216548-37526070297c?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1469&q=80);
+  background-repeat: no-repeat;
+  background-size: fill;
+  background-position: center;
+}
+
 .testimonial-highlight {
   color: #3A1D5A
+}
+.bg-submit {
+  background-color: #E2CAFA;
+  display: width;
+}
+.text-form {
+  color: #491584;
+}
+.form-bg {
+background-color: rgba(0, 0, 0, 0.75);
+}
+.text-footer {
+color: #9048E2;
+}
+.footer-background {
+background-color: #E2CAFA;
+}
+.capabilities-button {
+background-color: #FDE9FF;
+padding: 1rem;
+padding-left: 1.3rem;
+padding-right: 1.3rem;
+border-radius: 1rem;
+color: #9048E2;
+font-weight: 600;
+}
+.contact-button {
+  background-color: #E5FFFA;
+  padding: 1rem;
+  padding-left: 1.3rem;
+  padding-right: 1.3rem;
+  border-radius: 1rem;
+  color: black;
+  font-weight: 600;
+}
+.landing-hero {
+  background: linear-gradient(0deg, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), linear-gradient(0deg, rgba(144, 72, 226, 0.25), rgba(144, 72, 226, 0.25)), url(/unsplash-leader.jpg);
+  background-size: cover;
+  background-position: center;
 }
