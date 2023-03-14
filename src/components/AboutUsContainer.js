@@ -5,7 +5,7 @@ import { useInView, useTrail, animated as a, useSpring } from 'react-spring'
 const AboutUsContainer = () => {
 
     const [ref, inView, entry] = useInView({
-        threshold: 0.6,
+        threshold: 0.5,
     });
     const [visited, setVisited] = useState(false);
     const trails = useTrail(5, {
