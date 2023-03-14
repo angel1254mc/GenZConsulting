@@ -1,15 +1,18 @@
 import React from "react";
+import { animated as a } from "react-spring";
 
-const CardElement = ({ header, link, image }) => {
+const CardElement = ({ header, link, image, trail }) => {
   return (
-    <div
+    <a.div
       style={{
         background:
           `linear-gradient(0deg, rgba(0, 0, 0, 0.35), rgba(0, 0, 0, 0.35)), linear-gradient(180deg, rgba(255, 255, 255, 0) 0%, rgba(144, 72, 226, 0.65) 100%),  url(${link})`,
         backgroundPosition: "center",
         backgroundSize: "cover",
         backgroundRepeat: "no-repeat",
-      }}
+        ...trail}}
+      
+     
       className="card-bg flex flex-col justify-between rounded-md gap-y-4 w-[170px] min-h-[210px] py-10 px-4 bg-violet-400"
     >
       <h3 className="leading-1 m-0 text-base font-bold text-white w-4/5">
@@ -20,7 +23,7 @@ const CardElement = ({ header, link, image }) => {
           Read More
         </button>
       </div>
-    </div>
+    </a.div>
   );
 };
 
