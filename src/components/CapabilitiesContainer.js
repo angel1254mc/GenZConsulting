@@ -7,7 +7,7 @@ const CapabilitiesContainer = () => {
 
     
     const [ref, inView, entry] = useInView({
-        threshold: 0.9,
+        threshold: 0.6,
     });
     const [visited, setVisited] = useState(false);
     const trails = useTrail(5, {
