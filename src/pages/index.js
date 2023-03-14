@@ -9,7 +9,7 @@ import TestimonialSlider from '@/components/TestimonialSlider'
 import ContactUsForm from '@/components/ContactUsForm'
 import Footer from '@/components/Footer'
 import { useEffect } from 'react'
-
+import { Parallax, ParallaxLayer } from '@react-spring/parallax'
 const inter = Inter({ subsets: ['latin'] })
 
 export default function Home() {
@@ -43,8 +43,21 @@ export default function Home() {
         <NavBar/>
         <HeroLanding/>
         <Spacer/>
-        <div className="parallax-container w-full placeholder:">
-
+        <Spacer/>
+        <div className="about-us-container w-full flex flex-col items-center">
+          <div className="flex flex-col-reverse gap-y-8 md:flex-row justify-center w-full sm:w-full sm:max-w-[1280px]">
+            <section className="relative w-full h-96 px-6 md:w-[40%] lg:w-2/5 gap-y-2">
+              <Image className="flex rounded-md absolute object-cover w-64 h-64" src="https://images.unsplash.com/photo-1542744173-8e7e53415bb0?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80" width={531} height={354}/>
+              <Image className="flex rounded-md absolute right-8 bottom-4 object-cover w-64 h-64"src="https://images.unsplash.com/photo-1573165706511-3ffde6ef1fe3?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1469&q=80" width={531} height={354}/>
+            </section>
+            <section className="flex flex-col w-full px-6 md:w-[40%] lg:w-2/5 gap-y-2">
+              <p className="text-xs md:text-sm text-violet-800 font-light">MOVE AT THE SPEED OF INNOVATION, COMPROMISE NOTHING</p>
+              <h1 className="text-2xl md:text-3xl font-semibold">Business Logistics for the Digital Age</h1>
+              <hr className="mr-8 mt-2 b-2 border-violet-800"></hr>
+              <p className="text-xs font-regular leading-5 text-gray-700 mt-2">We are Gen Z Consulting, a Woman-Owned consulting company based in Gainesville, Florida. We specialize in providing a wide range of services to help businesses achieve their goals, including Talent Acquisition Services (TAS), Business Management, Financial Management, Government Contract Management, and Government Acquisition Support.</p>
+              <p className="text-xs font-regular leading-5 text-gray-700 mt-2">Our team of experienced consultants is dedicated to helping our clients navigate the complexities of the business world and achieve success. We take pride in our personalized approach, working closely with each client to develop customized solutions that meet their specific needs. At Gen Z Consulting, we are committed to delivering the highest level of service and building long-term relationships with our clients.</p>
+            </section>
+          </div>
         </div>
         <div className="svg-container w-full flex flex-col items-center">
           <Spacer></Spacer>
@@ -103,7 +116,7 @@ export default function Home() {
               </section>
           </div>
         </div>
-        <Spacer></Spacer>
+        <Spacer></Spacer>      
         <div className="contact-background flex flex-col w-full items-center">
             <section className="flex flex-col gap-y-4 md:flex-row w-full sm:max-w-[1280px] justify-center">
               <section className="flex flex-col w-full px-6 md:w-[40%] lg:w-2/5 gap-y-2">
@@ -123,7 +136,6 @@ export default function Home() {
         </div>
         <Footer></Footer>
       </main>
-       
     </>
   )
 }
