@@ -24,7 +24,7 @@ const HeroLanding = () => {
         <a.h1 style={heroTrail[0]} className="text-5xl md:text-7xl font-medium text-white mt-36 md:w-2/3 xl:text-8xl xl:w-2/3">
           Scalable Business Solutions that Perform
         </a.h1>
-        <a.p style={heroTrail[1]} className=" text-base sm:text-xl xl:text-2xl text-white">Take Your GovCon To The Next Level With BOOST’s Scalable Solutions Using Our Advisory Services, Accounting, Contract Management, HR, M&A Support, and Talent Acquisition</a.p>
+        <a.p style={heroTrail[1]} className=" text-base sm:text-xl xl:text-2xl text-white">Move at the Speed of Innovation, Compromise Nothing.</a.p>
         <div className="flex gap-x-6 lg:text-lg">
           <Link href="/capabilities">
             <a.button style={heroTrail[2]} className="capabilities-button">
