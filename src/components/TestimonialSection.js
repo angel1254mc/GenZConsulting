@@ -17,11 +17,11 @@ const TestimonialSection = () => {
     }, [inView])
   return (
     <div ref={ref} className="w-full flex flex-col items-center">
-      <div className="flex flex-col gap-y-2 w-full px-6 md:px-0 sm:max-w-[1280px]">
+      <div className="flex flex-col gap-y-2 w-full px-6 md:px-0 sm:max-w-[1280px] xl:max-w-[1400px]">
           <section className="flex flex-col w-full items-center gap-y-2">
-            <a.p style={trails[0]} className="text-xs md:text-sm text-violet-800 font-light">WE PRIDE OURSELVES IN DELIVERING THE HIGHEST LEVEL OF SERVICE</a.p>
-            <a.h1 style={trails[1]} className="text-2xl md:text-3xl font-semibold">Our Clients</a.h1>
-            <a.p style={trails[2]} className="text-xs max-w-[600px] text-center font-regular leading-5 text-gray-700 mt-2">Learn more about how Gen Z Consulting has been able to take the Business Operations of our Federal and Commercial clients alike to the next level.</a.p>
+            <a.p style={trails[0]} className="text-xs xl:text-base md:text-sm text-violet-800 font-light">WE PRIDE OURSELVES IN DELIVERING THE HIGHEST LEVEL OF SERVICE</a.p>
+            <a.h1 style={trails[1]} className="text-2xl xl:text-4xl md:text-3xl font-semibold">Our Clients</a.h1>
+            <a.p style={trails[2]} className="text-xs xl:text-base max-w-[800px] text-center font-regular leading-5 text-gray-700 mt-2">Learn more about how Gen Z Consulting has been able to take the Business Operations of our Federal and Commercial clients alike to the next level.</a.p>
           </section>
           <a.section style={trails[3]} className="flex justify-center items-center overflow-x-hidden">
             <TestimonialSlider clientTestimonials={

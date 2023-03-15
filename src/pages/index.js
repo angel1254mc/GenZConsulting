@@ -22,14 +22,11 @@ export default function Home() {
     var myNav = document.getElementById('navbar');
     document.addEventListener('scroll', () => {
       let scrollTop =  window.scrollY;
-      console.log(scrollTop);
       if (scrollTop >= 1 ) {
         myNav.classList.add("filled");
-        console.log("Hello! 3");
       } 
       else {
           myNav.classList.remove("filled");
-          console.log("Hello!");
       }
     })
 

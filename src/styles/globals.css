@@ -52,7 +52,7 @@
 .contact-background {
   background: linear-gradient(0deg, rgba(46, 17, 60, 0.4), rgba(46, 17, 60, 0.4)), url(https://images.unsplash.com/photo-1497366216548-37526070297c?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1469&q=80);
   background-repeat: no-repeat;
-  background-size: fill;
+  background-size: cover;
   background-position: center;
 }
 
@@ -94,7 +94,7 @@ font-weight: 600;
   font-weight: 600;
 }
 .landing-hero {
-  background: linear-gradient(0deg, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), linear-gradient(0deg, rgba(144, 72, 226, 0.25), rgba(144, 72, 226, 0.25)), url(/unsplash-leader.jpg);
+  background: linear-gradient(0deg, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), linear-gradient(0deg, rgba(144, 72, 226, 0.25), rgba(144, 72, 226, 0.25)), url(/unsplash-leader.jpg);
   background-size: cover;
   background-position: center;
 }

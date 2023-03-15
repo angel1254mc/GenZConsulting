@@ -6,7 +6,7 @@ import Image from 'next/image'
 
 const TestimonialSlider = ({clientTestimonials}) => {
   return (
-    <Swiper navigation={true} modules={[Navigation]} className="max-w-[750px] w-[90%] py-4 px-4">
+    <Swiper navigation={true} modules={[Navigation]} className="max-w-[750px] xl:max-w-[1000px] w-[90%] py-4 px-4">
         {
             clientTestimonials.map(({name, role, highlight, quote, image, logo}, index) => {
                 return (
@@ -16,8 +16,8 @@ const TestimonialSlider = ({clientTestimonials}) => {
                             <NameCard name={name} role={role} image={image}/>
                           </div>
                           <div className="card-col-2 flex flex-col w-full sm:w-3/5 gap-y-4 px-1">
-                            <h4 className="testimonial-highlight leading-4 font-semibold text-sm">{highlight}</h4>
-                            <p className="testimonial-quote leading-4 text-justify font-regular text-xs">{quote}</p>
+                            <h4 className="testimonial-highlight leading-4 font-semibold text-sm xl:text-lg">{highlight}</h4>
+                            <p className="testimonial-quote leading-4 text-justify font-regular text-xs xl:text-base">{quote}</p>
                           </div>
                         </div>
                     </SwiperSlide>

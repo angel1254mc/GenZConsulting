@@ -13,13 +13,13 @@ const CardElement = ({ header, link, image, trail }) => {
         ...trail}}
       
      
-      className="card-bg flex flex-col justify-between rounded-md gap-y-4 w-[170px] min-h-[210px] py-10 px-4 bg-violet-400"
+      className="card-bg flex flex-col justify-between rounded-md gap-y-4 w-[170px] xl:w-[200px] min-h-[210px] xl:min-h-[240px] py-10 px-4 bg-violet-400"
     >
-      <h3 className="leading-1 m-0 text-base font-bold text-white w-4/5">
+      <h3 className="leading-1 m-0 text-base xl:text-lg font-bold text-white w-4/5">
         {header}
       </h3>
       <div className="w-full mb-4 flex">
-        <button type="button" className="read-more-button bg-teal-500 text-white px-4 py-1 rounded-md">
+        <button type="button" className="read-more-button bg-teal-500 text-white xl:text-lg px-4 py-1 rounded-md">
           Read More
         </button>
       </div>

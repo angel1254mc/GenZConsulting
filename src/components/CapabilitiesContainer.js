@@ -30,12 +30,12 @@ const CapabilitiesContainer = () => {
     <div className="svg-container w-full flex flex-col items-center">
           <Spacer></Spacer>
           <Spacer></Spacer>
-          <div ref={ref} className="flex flex-col gap-y-8 md:flex-row justify-center w-full sm:w-full sm:max-w-[1280px]">
+          <div ref={ref} className="flex flex-col gap-y-8 md:flex-row justify-center w-full sm:w-full sm:max-w-[1280px] xl:max-w-[1400px]">
             <section className="flex flex-col w-full px-6 md:w-[40%] lg:w-1/3 gap-y-2">
-              <a.p style={trails[0]} className="text-xs md:text-sm text-violet-800 font-light">MOVE AT THE SPEED OF INNOVATION, COMPROMISE NOTHING</a.p>
-              <a.h1 style={trails[1]} className="text-2xl md:text-3xl font-semibold">Focus on Growth, While We Focus on Everything Else</a.h1>
+              <a.p style={trails[0]} className="text-xs md:text-sm xl:text-base text-violet-800 font-light">MOVE AT THE SPEED OF INNOVATION, COMPROMISE NOTHING</a.p>
+              <a.h1 style={trails[1]} className="text-2xl md:text-3xl xl:text-4xl font-semibold">Focus on Growth, While We Focus on Everything Else</a.h1>
               <a.hr style={trails[2]} className="mr-8 mt-2 b-2 border-violet-800"></a.hr>
-              <a.p style={trails[3]} className="text-xs font-regular leading-5 text-gray-700 mt-2">Our multidisciplinary team of experts brings together diverse skill sets and perspectives to provide the highest level of service to our clients. From Talent Acquisition Services (TAS) to Financial Management, and Government Contract Management to Business Management, we offer customized solutions tailored to meet the unique needs of each client.</a.p>
+              <a.p style={trails[3]} className="text-xs xl:text-base font-regular leading-5 text-gray-700 mt-2">Our multidisciplinary team of experts brings together diverse skill sets and perspectives to provide the highest level of service to our clients. From Talent Acquisition Services (TAS) to Financial Management, and Government Contract Management to Business Management, we offer customized solutions tailored to meet the unique needs of each client.</a.p>
             </section>
             <section className="flex flex-col px-6 md:p-0 gap-y-4 w-full md:w-[40%] lg:w-[55%]">
                   <div className="flex flex-row w-full gap-x-4">
