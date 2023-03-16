@@ -1,7 +1,10 @@
 import Image from 'next/image';
 import React, { useState } from 'react'
 import { useInView, animated as a, useTrail } from 'react-spring';
+import { Navigation } from 'swiper';
+import { SwiperSlide, Swiper } from 'swiper/react';
 import CapabilityFlipCard from './CapabilityFlipCard';
+import Spacer from './Spacer';
 const AboutCapabilities = () => {
 
     const [visited, setVisited] = useState(true);
@@ -20,11 +23,28 @@ const AboutCapabilities = () => {
             <a.p style={trails[0]} className="text-xs xl:text-base md:text-sm text-violet-800 font-light">OUR HR AND BUSINESS OPERATION CAPABILITIES</a.p>
             <a.h1 style={trails[1]} className="text-2xl xl:text-4xl md:text-3xl font-semibold">What We Do</a.h1>
           </section>
-          <div className="flex mb-16 flex-row sm:px-10 flex-wrap justify-center gap-2 sm:gap-4 md:gap-10 w-full items-center">
+          <div className="hidden sm:flex mb-16 flex-row sm:px-10 flex-wrap justify-center gap-2 sm:gap-4 md:gap-10 w-full items-center">
             <CapabilityFlipCard title="Human Resources & Talent Acquisition Consulting" image="/HRTASicon.png" description="Our team of experts can help you develop effective recruitment strategies, conduct candidate searches, and provide guidance on compensation and benefits to ensure that you are able to build the strongest team possible."/>
             <CapabilityFlipCard title="Financial Management" image="/FMicon.png" description="Our team of experts can help you develop and implement effective business strategies, streamline your operations, and provide guidance on everything from financial management to risk assessment."/>
             <CapabilityFlipCard title="Business Management" image="/BMicon.png" description="We offer a range of financial management services, including financial analysis, budgeting, forecasting, and reporting, to help you make informed decisions and manage your finances with confidence."/>
             <CapabilityFlipCard title="Contract Management & Acquisition Support" image="/CM&AS.png" description=" Our team of experts can help you manage all aspects of government contracting, from identifying opportunities to submitting proposals and managing contracts."/>
+          </div>
+          <div className="flex mb-20 sm:hidden w-full justify-center">
+              <Swiper style={{width: "400px"}} className="center-swiper" navigation = {true} modules={[Navigation]}>
+                <SwiperSlide className="flex">
+                  <CapabilityFlipCard title="Human Resources & Talent Acquisition Consulting" image="/HRTASicon.png" description="Our team of experts can help you develop effective recruitment strategies, conduct candidate searches, and provide guidance on compensation and benefits to ensure that you are able to build the strongest team possible."/>
+                </SwiperSlide>
+                <SwiperSlide>
+                  <CapabilityFlipCard title="Financial Management" image="/FMicon.png" description="Our team of experts can help you develop and implement effective business strategies, streamline your operations, and provide guidance on everything from financial management to risk assessment."/>
+                </SwiperSlide>
+               
+                <SwiperSlide>
+                  <CapabilityFlipCard title="Business Management" image="/BMicon.png" description="We offer a range of financial management services, including financial analysis, budgeting, forecasting, and reporting, to help you make informed decisions and manage your finances with confidence."/>
+                </SwiperSlide>
+                <SwiperSlide>
+                <CapabilityFlipCard title="Contract Management & Acquisition Support" image="/CM&AS.png" description=" Our team of experts can help you manage all aspects of government contracting, from identifying opportunities to submitting proposals and managing contracts."/>
+                </SwiperSlide>
+              </Swiper>
           </div>
         </div>
     </div>

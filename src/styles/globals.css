@@ -37,13 +37,11 @@
   align-items: center;
 }
 
-.swiper-slide img {
+.swiper-slide img.testimonial-image {
   display: block;
   width: 100%;
   height: 100%;
   object-fit: cover;
-}
-.swiper-slide img.testimonial-image {
   width: 70px;
   height: 70px;
   border-radius: 10rem;
@@ -200,4 +198,11 @@ background-color: rgba(244, 214, 247, 0.8);
 .contact-about-button {
   background-color: #FDE9FF;
   border: 1px solid  #481584;
+}
+.center-swiper > .swiper-wrapper > .swiper-slide {
+  display: flex;
+  justify-content: center;
+}
+.swiper-slide img {
+  unset: all;
 }
