@@ -9,6 +9,17 @@
   background-size: cover;
 }
 
+.svg-container-2 {
+  background-position: top;
+  background-image: url("/svg-background.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+@media screen and (min-width: 1200px) {
+  .svg-container-2 {
+    background-position: 50% 20%;
+  }
+}
 
 .swiper {
   width: 100%;
@@ -141,4 +152,52 @@ opacity: 0;
 }
 .navbar.expand >a:hover {
 background-color: rgba(244, 214, 247, 0.8);
+}
+.hero-subtitle-text {
+  color: #F8BCFE;
+}
+.about-hero {
+  background: linear-gradient(0deg, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), linear-gradient(0deg, rgba(144, 72, 226, 0.25), rgba(144, 72, 226, 0.25)), url(https://images.pexels.com/photos/1181406/pexels-photo-1181406.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1);
+  background-size: cover;
+  background-position: center;
+}
+
+.flip-card {
+  border: 2px solid #481584;
+  background-color: #F9E9FE;
+  color: #491584;
+}
+.flip-card-back {
+  border: 2px solid #481584;
+  background-color: #F9E9FE;
+}
+.flip-card-button {
+  font-weight: 600;
+  border: 2px solid #481584;
+  background-color: transparent;
+  transition: 0.3s all;
+}
+.flip-card-button:hover {
+  background-color: white;
+  color: #481584;
+  transform: scale(1.05);
+}
+
+.innovation-block, .d-and-i-block {
+  border-radius: 15px;
+  background-color: #E5FFFA;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+
+}.collaboration-block, .integrity-block {
+  border-radius: 15px;
+  background-color: #FDE9FF;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+.values-image  {
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 15px
+}
+.contact-about-button {
+  background-color: #FDE9FF;
+  border: 1px solid  #481584;
 }

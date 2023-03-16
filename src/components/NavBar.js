@@ -11,7 +11,7 @@ const NavBar = () => {
     <>
     <div className={`max-w-full h-full fixed flex sm:hidden flex-col navbar ${expand ? "expand" : ""}`}>
       <Link href="/" className=" border-b-2 text-2xl">Home</Link>
-      <Link href="/" className=" border-b-2 text-2xl">About Us</Link>
+      <Link href="/about" className=" border-b-2 text-2xl">About Us</Link>
       <Link href="/" className=" border-b-2 text-2xl">Capabilities</Link>
       <Link href="/" className=" border-b-2 text-2xl">Insights</Link>
       <Link href="/" className=" border-b-2 text-2xl">Contact Us</Link>
