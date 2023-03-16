@@ -64,6 +64,7 @@ const AboutUs = () => {
         <Spacer/>
 
         <AboutContact/>
+        <Footer></Footer>
       </main>
     </>
   )
