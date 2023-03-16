@@ -12,7 +12,7 @@ const AboutValues = () => {
                 <section className="flex flex-col w-full gap-y-4">
                    <p className="text-xs xl:text-base md:text-sm text-violet-800 font-light">WHAT WE VALUE IN AND OUT OF WORK</p>
                    <h1 className="text-2xl xl:text-4xl md:text-3xl font-semibold">Our Values</h1>
-                   <p className="text-sm xl:text-base md:text-sm text-gray-800 font-regular">At Gen Z Consulting, we believe in embracing a modern, forward-thinking approach to consulting. It’s these values that enable us to provide our clients with exceptional service and help them achieve their goals in a way that is meaningful, effective, and sustainable. </p>
+                   <p className="text-sm xl:text-base md:text-sm text-gray-800 font-regular">At Gen Z Consulting, we believe in embracing a modern, forward-thinking approach to consulting. It&apos;s these values that enable us to provide our clients with exceptional service and help them achieve their goals in a way that is meaningful, effective, and sustainable. </p>
                    <p className="text-sm xl:text-base md:text-sm text-gray-800 font-regular">We are constantly striving to improve and innovate, and we believe that by staying true to our values, we can make a positive impact on the world around us and deliver more value.</p>
                  </section>
                 </div>
@@ -22,7 +22,7 @@ const AboutValues = () => {
                         <Image src="/innovation.svg" height={30} width={30}/>
                     </div>
                     <div className="md:text-sm 2xl:text-base">
-                        <p>We are committed to staying ahead of the curve and providing our clients with cutting-edge solutions that drive results. We believe in thinking outside the box and pushing the boundaries of what's possible.</p>
+                        <p>We are committed to staying ahead of the curve and providing our clients with cutting-edge solutions that drive results. We believe in thinking outside the box and pushing the boundaries of what&apos;s possible.</p>
                     </div>
                 </div>
                 <div class="collaboration-block flex flex-col p-6 gap-y-4 sm:w-[270px] sm:h-[290px] md:h-[270px] 2xl:w-[300px] 2xl:h-[300px]">
@@ -49,7 +49,7 @@ const AboutValues = () => {
                         <Image src="/honesty.svg" height={30} width={30}/>
                     </div>
                     <div className="md:text-sm 2xl:text-base">
-                        <p>We believe that honesty and transparency are essential to building strong relationships with our clients. We hold ourselves to the highest ethical standards and are committed to doing the right thing, even when it's hard.</p>
+                        <p>We believe that honesty and transparency are essential to building strong relationships with our clients. We hold ourselves to the highest ethical standards and are committed to doing the right thing, even when it&apos;s hard.</p>
                     </div>
                 </div>
                 <Image src={"/sticky_ntoes.png"} className="values-image hidden xl:flex absolute right-24 bottom-8 2xl:right-60 -z-10 w-96 h-96" height="868" width="1076"/>
