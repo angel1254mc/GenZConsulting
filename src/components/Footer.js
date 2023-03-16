@@ -1,6 +1,7 @@
 import { faFacebookSquare, faInstagramSquare, faLinkedin, faTwitterSquare } from '@fortawesome/free-brands-svg-icons'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import Image from 'next/image'
+import Link from 'next/link'
 import React from 'react'
 
 const Footer = () => {
@@ -22,13 +23,27 @@ const Footer = () => {
                 <div>
                     <h1 className="text-xl xl:text-2xl font-bold mb-1">NAVIGATE</h1>  
                     <ul className="text-base xl:text-lg flex flex-col gap-y-1">
-                        <li>HOME</li>
-                        <li>ABOUT US</li>
-                        <li>TAS</li>
-                        <li>BUSINESS MANAGEMENT</li>
-                        <li>CONTRACT MANAGEMENT</li>
-                        <li>ACQUISITION</li>
-                        <li>CONTACT US</li>
+                        <Link href="/">
+                            <li>HOME</li>
+                        </Link>
+                        <Link href="/about">
+                            <li>ABOUT US</li>
+                        </Link>
+                        <Link href="/talent-acquisition">
+                            <li>TAS</li>
+                        </Link>
+                        <Link href="/business-management">
+                            <li>BUSINESS MANAGEMENT</li>
+                        </Link>
+                        <Link href="/contract-management">
+                            <li>CONTRACT MANAGEMENT</li>
+                        </Link>
+                        <Link href="/contract-acquisition">
+                            <li>CONTRACT ACQUISITION</li>
+                        </Link>
+                        <Link href="/contact">
+                            <li>CONTACT US</li>
+                        </Link>
                     </ul>  
                 </div>
             </div>

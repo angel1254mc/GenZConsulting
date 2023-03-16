@@ -4,7 +4,7 @@ import {animated as a, useInView, useTrail} from 'react-spring'
 const TestimonialSection = () => {
     const [visited, setVisited] = useState(false);
     const [ref, inView, entry] = useInView({
-        threshold: 0.6,
+        threshold: 0.5,
     });
     const trails = useTrail(4, {
         opacity: visited ? 1 : 0, transform: visited ? "translateY(0%)" :  "translateY(2%)",

@@ -2,7 +2,7 @@ import Image from 'next/image'
 import React, { useState } from 'react'
 import { useSpring, animated as a } from 'react-spring'
 
-const CapabilityFlipCard = ({image, title, description}) => {
+const CapabilityFlipCard = ({image, title, description, trail}) => {
 
     /**
      * Spring-flip-card script from react-spring examples! animates a vertical card flip that reveals content on the other side
@@ -16,7 +16,7 @@ const CapabilityFlipCard = ({image, title, description}) => {
       })
     
   return (
-    <div className="flex cursor-pointer w-[180px] h-[250px] sm:w-[250px] sm:h-[340px] flex-col items-center relative" onClick={() => set(state => !state)}>
+    <a.div style={trail} className="flex cursor-pointer w-[180px] h-[250px] sm:w-[250px] sm:h-[340px] flex-col items-center relative" onClick={() => set(state => !state)}>
         <a.div style={{opacity: opacity.to(o => 1 - o), transform}} className="flip-card w-full h-full flex flex-col items-center">
             <div className="w-full h-[140px] sm:h-[230px] flex justify-center items-center">
                 <Image height="270" width="272" className="w-[75px] h-[75px] sm:w-[136px] sm:h-[136px]" src={image}/>
@@ -31,7 +31,7 @@ const CapabilityFlipCard = ({image, title, description}) => {
                 Read More
             </button>
         </a.div>
-    </div>
+    </a.div>
   )
 }
 

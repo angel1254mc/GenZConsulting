@@ -19,6 +19,7 @@ const inter = Inter({ subsets: ['latin'] })
 export default function Home() {
 
   useEffect(() => {
+    document.body.scrollTop = 0;
     var myNav = document.getElementById('navbar');
     document.addEventListener('scroll', () => {
       let scrollTop =  window.scrollY;

@@ -31,7 +31,7 @@ const HeroLanding = () => {
               Capabilities
             </a.button>
           </Link>
-          <Link href="/capabilities">
+          <Link href="/contact">
             <a.button style={heroTrail[3]} className="contact-button">
               Contact Us
             </a.button>
