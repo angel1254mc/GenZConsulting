@@ -24,7 +24,7 @@ const NavBar = () => {
         </div>
         <div className="w-auto gap-x-6 h-full hidden sm:flex items-center text-base font-medium text-black">
           <Link href="/">Home</Link>
-          <Link href="/">About Us</Link>
+          <Link href="/about">About Us</Link>
           <Link href="/">Capabilities</Link>
           <Link href="/">Insights</Link>
           <Link href="/">Contact Us</Link>
