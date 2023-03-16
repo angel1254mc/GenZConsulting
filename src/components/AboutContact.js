@@ -22,7 +22,7 @@ const AboutContact = () => {
             <section className="flex gap-y-4 py-4 flex-col w-[90%] md:w-1/3">
                 <a.p style={trails[0]} className="text-xs xl:text-base md:text-sm text-violet-800 font-light">GET IN TOUCH WITH US, AND SEE HOW WE CAN HELP ENHANCE YOUR BUSINESS</a.p>
                 <a.h1 style={trails[1]} className="text-2xl xl:text-4xl md:text-3xl font-semibold">Reach Out To Us</a.h1>
-                <a.p style={trails[0]} className="text-sm xl:text-base md:text-sm text-gray-800 font-light">We are passionate about what we do and are committed to helping businesses of all sizes achieve their full potential. If you're interested in learning more about our services or how we can help your business grow, please don't hesitate to get in touch. Our team of experts is here to answer any questions you may have and help you develop a customized solution that meets your unique needs.</a.p>
+                <a.p style={trails[0]} className="text-sm xl:text-base md:text-sm text-gray-800 font-light">We are passionate about what we do and are committed to helping businesses of all sizes achieve their full potential. If you&apos;re interested in learning more about our services or how we can help your business grow, please don&apos;t hesitate to get in touch. Our team of experts is here to answer any questions you may have and help you develop a customized solution that meets your unique needs.</a.p>
                 <div className="w-full flex justify-center">
                     <Link href="/contact-us">
                         <button className="font-medium px-6 py-2  rounded-md sm:text-base text-lg contact-about-button">Contact Us</button>
