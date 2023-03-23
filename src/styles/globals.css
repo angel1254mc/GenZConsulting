@@ -159,6 +159,11 @@ background-color: rgba(244, 214, 247, 0.8);
   background-size: cover;
   background-position: center;
 }
+.capability-hero {
+  background: linear-gradient(0deg, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), linear-gradient(0deg, rgba(144, 72, 226, 0.25), rgba(144, 72, 226, 0.25)), url(https://images.pexels.com/photos/3184339/pexels-photo-3184339.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1);
+  background-size: cover;
+  background-position: center;
+}
 
 .flip-card {
   border: 2px solid #481584;
@@ -210,4 +215,23 @@ background-color: rgba(244, 214, 247, 0.8);
 }
 .swiper-slide img {
   unset: all;
+}
+.financial-info-card {
+  border: 2px solid #481584;
+}
+.checkmark {
+  background-color: #FBD6FC;
+  top: -30px;
+  left: calc(6.5rem - 30px);
+  width: 60px;
+  height: 60px;
+  border-radius: 100%;
+  border: 2px solid #481584;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.contact-capabilities {
+  background: rgb(255,255,255);
+background: linear-gradient(180deg, rgba(255,255,255,1) 0%, rgba(224,224,224,1) 100%);
 }
