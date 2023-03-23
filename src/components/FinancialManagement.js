@@ -16,12 +16,12 @@ const FinancialManagement = () => {
         Our Financial Management services provide businesses with the tools and insights needed to make informed decisions and ensure financial stability. Our services include:
         </p>
 
-        <div className="w-full mt-10 gap-x-4 sm:gap-x-12 gap-y-8 flex justify-center n flex-wrap">
-            <div className="flex gap-x-4 sm:gap-x-12">
+        <div className="w-full mt-10 gap-x-4 sm:gap-x-12 gap-y-8 flex justify-center flex-wrap">
+            <div className="flex flex-col sm:flex-row gap-x-4 gap-y-8 sm:gap-x-12">
                 <FinancialCard content={"Budgeting and Forecasting"}/>
                 <FinancialCard content={"Financial Analysis and Reporting"}/>
             </div>
-            <div className="flex gap-x-4 sm:gap-x-12">
+            <div className="flex flex-col sm:flex-row gap-x-4 gap-y-8 sm:gap-x-12">
                 <FinancialCard content={"Cash Flow Management and Optimization"}/>
                 <FinancialCard content={"Risk Assessment and Mitigation"}/>
             </div>
