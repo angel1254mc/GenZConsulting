@@ -1,8 +1,8 @@
 import React from 'react'
 
-const Spacer = () => {
+const Spacer = ({id}) => {
   return (
-    <div className="h-10"></div>
+    <div id={id} className="h-10"></div>
   )
 }
 

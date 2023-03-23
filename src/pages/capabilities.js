@@ -59,16 +59,17 @@ export default function Capabilities() {
 
         <TASSuccesses/>
 
+        <Spacer id="human-resources"></Spacer>
         <HRConsulting/>
-
+        <div id="business-management"></div>
         <BusinessManagement/>
-
+        <div id="financial-management"></div>
         <FinancialManagement/>
 
         <GovConServices/>
 
         <CallToActionCapabilities/>
-        
+
         <Footer></Footer>
       </main>
     </>

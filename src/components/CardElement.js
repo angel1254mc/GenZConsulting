@@ -1,7 +1,8 @@
+import Link from "next/link";
 import React from "react";
 import { animated as a } from "react-spring";
 
-const CardElement = ({ header, link, image, trail }) => {
+const CardElement = ({ header, link, image, trail, to }) => {
   return (
     <a.div
       style={{
@@ -19,9 +20,11 @@ const CardElement = ({ header, link, image, trail }) => {
         {header}
       </h3>
       <div className="w-full mb-4 flex">
-        <button type="button" className="read-more-button bg-teal-500 text-white xl:text-lg px-4 py-1 rounded-md">
-          Read More
-        </button>
+        <Link href={to}>
+          <button type="button" className="read-more-button bg-teal-500 text-white xl:text-lg px-4 py-1 rounded-md">
+            Read More
+          </button>
+        </Link>
       </div>
     </a.div>
   );

@@ -6,7 +6,7 @@ import React from 'react'
 const HRConsulting = () => {
   return (
     <div className="flex flex-col w-full xl:px-20 md:px-10 mb-16 mt-8 md:my-16 items-center">
-        <section className="flex flex-row w-[85%] justify-center gap-x-8 lg:gap-x-12 2xl:gap-x-16 sm:px-4 xl:px-0 lg:w-max-[1300px] xl:max-w-[1400px] gap-y-2">
+        <section id="human-resources-consulting" className="flex flex-row w-[85%] justify-center gap-x-8 lg:gap-x-12 2xl:gap-x-16 sm:px-4 xl:px-0 lg:w-max-[1300px] xl:max-w-[1400px] gap-y-2">
         <div className="flex flex-col sm:w-full md:w-5/12 gap-y-1">
                 <p className="text-xs xl:text-base 2xl:text-lg md:text-sm text-violet-800 font-light">END-TO-END HR AUGMENTATION</p>
                 <h1 className="text-2xl xl:text-4xl 2xl:text-5xl md:text-3xl  font-semibold">Human Resources Consulting</h1>

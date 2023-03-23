@@ -54,7 +54,6 @@ const AboutUs = () => {
         
         <AboutIntro/>
 
-        <Spacer/>
 
         <AboutCapabilities/>
 

@@ -39,12 +39,12 @@ const CapabilitiesContainer = () => {
             </section>
             <section className="flex flex-col px-6 md:p-0 gap-y-4 w-full md:w-[40%] lg:w-[55%]">
                   <div className="flex flex-row w-full gap-x-4">
-                    <CardElement trail={cardTrail[0]} header={"Talent Acquisition Services"} link="https://images.unsplash.com/photo-1544725121-be3bf52e2dc8?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1167&q=80"/>
-                    <CardElement trail={cardTrail[1]} header={"Contract and Acquisition Management"} link="https://images.unsplash.com/photo-1561930187-90c5428665af?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=687&q=80"/>
+                    <CardElement to="/capabilities#talent-acquisition-services" trail={cardTrail[0]} header={"Talent Acquisition Services"} link="https://images.unsplash.com/photo-1544725121-be3bf52e2dc8?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1167&q=80"/>
+                    <CardElement to="/capabilities#govcon-services" trail={cardTrail[1]} header={"Contract and Acquisition Management"} link="https://images.unsplash.com/photo-1561930187-90c5428665af?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=687&q=80"/>
                   </div>
                   <div className="flex flex-row-reverse w-full gap-x-4">
-                    <CardElement trail={cardTrail[2]} header={"Business Management"} link="https://images.unsplash.com/photo-1604933762161-67313106146c?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80"/>
-                    <CardElement trail={cardTrail[3]}header={"Financial Management"} link="https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80"/>
+                    <CardElement to="/capabilities#business-management" trail={cardTrail[2]} header={"Business Management"} link="https://images.unsplash.com/photo-1604933762161-67313106146c?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80"/>
+                    <CardElement to="/capabilities#financial-management" trail={cardTrail[3]}header={"Financial Management"} link="https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80"/>
                   </div>
             </section>
           </div>
