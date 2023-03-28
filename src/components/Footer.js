@@ -29,19 +29,19 @@ const Footer = () => {
                         <Link href="/about">
                             <li>ABOUT US</li>
                         </Link>
-                        <Link href="/talent-acquisition">
+                        <Link href="/capabilities">
                             <li>TAS</li>
                         </Link>
-                        <Link href="/business-management">
+                        <Link href="/capabilities">
                             <li>BUSINESS MANAGEMENT</li>
                         </Link>
-                        <Link href="/contract-management">
+                        <Link href="/capabilities">
                             <li>CONTRACT MANAGEMENT</li>
                         </Link>
-                        <Link href="/contract-acquisition">
+                        <Link href="/capabilities">
                             <li>CONTRACT ACQUISITION</li>
                         </Link>
-                        <Link href="/contact">
+                        <Link href="/contact-us">
                             <li>CONTACT US</li>
                         </Link>
                     </ul>  

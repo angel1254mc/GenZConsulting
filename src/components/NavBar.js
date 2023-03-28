@@ -7,13 +7,14 @@ import React, { useState } from 'react'
 const NavBar = () => {
 
   const [expand, toggleExpand] = useState(false);
+
   return (
     <>
     <div className={`max-w-full h-full fixed flex sm:hidden flex-col navbar ${expand ? "expand" : ""}`}>
       <Link href="/" className=" border-b-2 text-2xl">Home</Link>
       <Link href="/about" className=" border-b-2 text-2xl">About Us</Link>
       <Link href="/capabilities" className=" border-b-2 text-2xl">Capabilities</Link>
-      <Link href="/contact" className=" border-b-2 text-2xl">Contact Us</Link>
+      <Link href="/contact-us" className=" border-b-2 text-2xl">Contact Us</Link>
     </div>
     <nav id="navbar" className="navbar-custom fixed w-full flex justify-center px-4 py-2">
       <div className="flex w-full sm:px-8 max-w-[1300px] justify-between sm:justify-around">
@@ -25,7 +26,7 @@ const NavBar = () => {
           <Link href="/">Home</Link>
           <Link href="/about">About Us</Link>
           <Link href="/capabilities">Capabilities</Link>
-          <Link href="/contact">Contact Us</Link>
+          <Link href="/contact-us">Contact Us</Link>
         </div>
       </div>
     </nav>

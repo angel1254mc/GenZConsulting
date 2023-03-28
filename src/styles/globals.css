@@ -235,3 +235,40 @@ background-color: rgba(244, 214, 247, 0.8);
   background: rgb(255,255,255);
 background: linear-gradient(180deg, rgba(255,255,255,1) 0%, rgba(224,224,224,1) 100%);
 }
+.contact-background-image {
+  overflow: visible;
+  width: 100%;
+  height: auto;
+  position: relative;
+  color: #491584;
+}
+.contact-image {
+  position: absolute;
+  z-index: -1;
+  margin-top: 45px;
+  width: 100%;
+  height: auto;
+  position: cover;
+}
+
+@media screen and (max-width: 1200px) {
+  .contact-image {
+    height: 100vh;
+  }
+}
+
+.contact-input {
+  border: 1px solid #BCBCBC;
+}
+.contact-form {
+  box-shadow: 0px 4px 10px 5px rgba(0, 0, 0, 0.25);
+  color: #626262;
+}
+.textarea-input {
+  border: 1px solid #BCBCBC;
+}
+.contact-form-submit {
+  border: 1px solid #BCBCBC;
+  font-weight: 600;
+  background-color: #F0DFFF;
+}

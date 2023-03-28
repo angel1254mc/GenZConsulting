@@ -14,6 +14,7 @@ import AboutUsContainer from '@/components/AboutUsContainer'
 import CapabilitiesContainer from '@/components/CapabilitiesContainer'
 import TestimonialSection from '@/components/TestimonialSection'
 import ContactUs from '@/components/ContactUs'
+import { Toaster } from 'sonner'
 const inter = Inter({ subsets: ['latin'] })
 
 export default function Home() {
@@ -41,6 +42,7 @@ export default function Home() {
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
+      <Toaster position="bottom-right"/>
       <main className="flex flex-col relative">
         <NavBar/>
         <HeroLanding/>
