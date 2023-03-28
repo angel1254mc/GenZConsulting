@@ -10,7 +10,7 @@ import { animated as a } from 'react-spring';
 import { Toaster } from 'sonner';
 const inter = Inter({ subsets: ['latin'] });
 
-const contactUs = () => {
+const ContactUs = () => {
 
   
   useEffect(() => {
@@ -61,4 +61,4 @@ const contactUs = () => {
   )
 }
 
-export default contactUs
+export default ContactUs
