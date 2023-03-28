@@ -42,7 +42,7 @@ export default function Home() {
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      <Toaster position="bottom-right"/>
+      <Toaster richColors position="bottom-right"/>
       <main className="flex flex-col relative">
         <NavBar/>
         <HeroLanding/>

@@ -2,8 +2,7 @@ import React, { useEffect, useState } from 'react'
 import ContactUsForm from './ContactUsForm'
 import Spacer from './Spacer'
 import { animated as a, useInView, useTrail } from 'react-spring'
-const ContactUs = () => {
-
+const ContactUs = () => {;
     const [visited, setVisited] = useState(false);
     const [ref, inView, entry] = useInView({
         threshold: 0.6,

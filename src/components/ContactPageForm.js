@@ -1,12 +1,15 @@
 import Link from 'next/link'
 import React, { useState } from 'react'
 import { useForm } from "react-hook-form";
+import { ColorRing } from 'react-loader-spinner';
 import { toast } from 'sonner';
 const ContactPageForm = () => {
     
-    const {register, handleSubmit, watch, formState: {errors}} = useForm();
+    const [loading, setLoading] = useState(false)
+    const {register, handleSubmit, reset} = useForm();
     const [error, setError] = useState(null);
     const onSubmit = async (data) => {
+        setLoading(true);
         // Submit the data to the server via API request
         // Data vaidation is handled by the `handleSubmit` wrapper
         console.log(data);
@@ -26,7 +29,9 @@ const ContactPageForm = () => {
                 toast.error(error);
             else {
                 toast.success("Successfully Sent Email");
+                reset();
             }
+            setLoading(false);
           }
     }
 
@@ -37,13 +42,13 @@ const ContactPageForm = () => {
         <div className="flex flex-col md:flex-row text-sm md:text-lg  justify-between">
             <div className="flex flex-col gap-y-2 w-full md:w-[45%] my-2">
                 <label for="first-name">First Name</label>
-                <input {...register("firstName")} name="firstName" type="text" className="bg-white px-2 py-2 w-full rounded-md contact-input">
+                <input {...register("firstName", {required: "Plese Enter your First Name."})} name="firstName" type="text" className="bg-white px-2 py-2 w-full rounded-md contact-input">
 
                 </input>
             </div>
             <div className="flex flex-col text-sm md:text-lg gap-y-2 w-full md:w-[45%] my-2">
                 <label for="last-name">Last Name</label>
-                <input {...register("lastName")} name="lastName" type="text" className="bg-white px-2 py-2 w-full rounded-md contact-input">
+                <input {...register("lastName", {required: "Please Enter your Last Name"})} name="lastName" type="text" className="bg-white px-2 py-2 w-full rounded-md contact-input">
 
                 </input>
             </div>
@@ -51,25 +56,27 @@ const ContactPageForm = () => {
         <div className="flex flex-col md:flex-row text-sm md:text-lg justify-between">
             <div className="flex flex-col gap-y-2 w-full md:w-[45%] mb-2">
                 <label for="email" >Email</label>
-                <input {...register("email")} name="email" type="email" className="bg-white px-2 py-2 w-full rounded-md contact-input">
+                <input {...register("email", {required: "Please enter your email"})} name="email" type="email" className="bg-white px-2 py-2 w-full rounded-md contact-input">
 
                 </input>
             </div>
             <div className="flex flex-col gap-y-2 w-full md:w-[45%] mb-2">
                 <label for="subject">Subject</label>
-                <input  {...register("subject")} name="subject" type="text" className="bg-white px-2 py-2 w-full rounded-md contact-input">
+                <input  {...register("subject", {required: "Please enter your subject"})} name="subject" type="text" className="bg-white px-2 py-2 w-full rounded-md contact-input">
 
                 </input>
             </div>
         </div>
         <div className="flex flex-col gap-y-2 my-1 justify-between">
             <label for="body">Message...</label>
-            <textarea {...register("body")} name="body" className="text-lg w-full min-h-[14rem] textarea-input rounded-md bg-white px-2 py-2">
+            <textarea {...register("body", {required: "Please enter your message body"})} name="body" className="text-lg w-full min-h-[14rem] textarea-input rounded-md bg-white px-2 py-2">
 
             </textarea>
         </div>
         <div className="flex gap-y-2 text-lg my-2 justify-start">
-            <button type="submit" className="flex w-auto px-8 py-2 text-lg text-black contact-form-submit">Submit</button>
+            <button type="submit" className="flex w-auto px-8 py-2 text-lg text-black contact-form-submit">
+            {!loading ? "Submit" : <ColorRing visible={true} height="40" width="40" colors={["black"]} ariaLabel="submit-loading"/>}
+            </button>
         </div>
     </form>
 
