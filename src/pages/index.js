@@ -56,9 +56,12 @@ export default function Home() {
         
         <Spacer></Spacer>
         
-        <TestimonialSection/>
+       { /**
+          <TestimonialSection/>
 
-        <Spacer></Spacer>      
+          <Spacer></Spacer>     
+        */
+       } 
         
         <ContactUs></ContactUs>
 
