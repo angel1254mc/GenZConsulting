@@ -57,7 +57,7 @@ const Footer = () => {
         <div className="w-4/5 md:w-1/4 flex flex-col gap-y-4">
           <div className="flex text-lg flex-col gap-y-1">
             <h1 className="text-xl xl:text-2xl font-bold mb-2">CONTACT US</h1>
-            <p>Email: collaborate@genzconsulting.us</p>
+            <p>Email: preety@genzconsulting.us</p>
             <p>Office: 106 SW 6th St. Gainesville, FL 32601</p>
             <p>Phone: (707) 123-4567</p>
           </div>
