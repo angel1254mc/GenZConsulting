@@ -59,7 +59,7 @@ const Footer = () => {
             <h1 className="text-xl xl:text-2xl font-bold mb-2">CONTACT US</h1>
             <p>Email: preety@genzconsulting.us</p>
             <p>Office: 106 SW 6th St. Gainesville, FL 32601</p>
-            <p>Phone: (707) 123-4567</p>
+            <p>Phone: (757) 323-9136</p>
           </div>
           { /** 
             <div className="flex flex-col gap-y-1 xl:gap-y-2">
